@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="result_style.css">
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+</head>
+<body>
+	<div id=top>
+		<h1>RESULT</h1>
+	</div>
+	<form method="GET" action="result_teller.php">
+		<select name="class" id="std">
+			<option value=1>Select A class</option>
+		
+			<option value=10>10</option>
+		</select>
+		<select name="sec" id="sec">
+			<option value=0>Select Section</option>
+			<option value=1>All</option>
+			<option value=A>A</option>
+			<option value=B>B</option>
+			<option value=C>C</option>
+			
+		</select>
+		<button type="submit" name="subBtn">Submit</button>	
+	</form>
+	<header>
+		<h1>Class 10 </h1>		<p>(3 Marks for each right answer)</p>
+	</header>
+	<table><tr><th>Rank</th><th>Name</th><th>Section</th><th>Roll</th><th>Marks</th></tr><tr><td>1</td><td>Sayantika Das </td><td>A</td><td>39</td><td>12</td></tr><tr><td>2</td><td>Sayantani sinha</td><td>B</td><td>38</td><td>9</td></tr><tr><td>2</td><td>Jhilik thakur</td><td>A</td><td>17</td><td>9</td></tr><tr><td>2</td><td>Rupsa Sardar</td><td>A</td><td>34</td><td>9</td></tr><tr><td>2</td><td>Dipanwita Mukherjee</td><td>B</td><td>7</td><td>9</td></tr><tr><td>2</td><td>Bonni Banerjee</td><td>B</td><td>4</td><td>9</td></tr><tr><td>2</td><td>Jayashree Thakur</td><td>B</td><td>14</td><td>9</td></tr><tr><td>2</td><td>Payal saha</td><td>A</td><td>25</td><td>9</td></tr><tr><td>2</td><td>Labani Ghosh</td><td>B</td><td>52</td><td>9</td></tr><tr><td>2</td><td>Rachana</td><td>B</td><td>29</td><td>9</td></tr><tr><td>2</td><td>Shreya Banerjee</td><td>B</td><td>39</td><td>9</td></tr><tr><td>2</td><td>Taniya</td><td>A</td><td>47</td><td>9</td></tr><tr><td>2</td><td>Sanchita das</td><td>B</td><td>35</td><td>9</td></tr><tr><td>2</td><td>Paramita adhikary </td><td>B</td><td>181</td><td>9</td></tr><tr><td>2</td><td>Chandrani Ray</td><td>A</td><td>8</td><td>9</td></tr><tr><td>3</td><td>Soumi Das </td><td>A</td><td>42</td><td>6</td></tr><tr><td>3</td><td>Neha Dutta</td><td>A</td><td>22</td><td>6</td></tr><tr><td>3</td><td>Dishika seth</td><td>A</td><td>12</td><td>6</td></tr><tr><td>3</td><td>Anusuya Nandy </td><td>B</td><td>3</td><td>6</td></tr><tr><td>3</td><td>Disha Ghosh </td><td>B</td><td>11</td><td>6</td></tr><tr><td>3</td><td>Sneha Patra</td><td>B</td><td>45</td><td>6</td></tr><tr><td>4</td><td>Dipsikha das</td><td>A</td><td>11</td><td>3</td></tr><tr><td>4</td><td>Basanti maity </td><td>B</td><td>5</td><td>3</td></tr><tr><td>4</td><td>Anushka Chatterjee </td><td>B</td><td>1</td><td>3</td></tr><tr><td>4</td><td>Anwesha Bhandari </td><td>A</td><td>5</td><td>3</td></tr><tr><td>4</td><td>Sangita Mukherjee</td><td>B</td><td>36</td><td>3</td></tr><tr><td>4</td><td>Anushka Ghosh</td><td>B</td><td>2</td><td>3</td></tr><tr><td>4</td><td>Monisha khatun </td><td>A</td><td>19</td><td>3</td></tr><tr><td>4</td><td>Ishani chakraborty</td><td>A</td><td>15</td><td>3</td></tr><tr><td>4</td><td>pratyusha mondal </td><td>A</td><td>26</td><td>3</td></tr><tr><td>4</td><td>Trisha Mondal </td><td>A</td><td>51</td><td>3</td></tr><tr><td>4</td><td>Nabanita Das </td><td>B</td><td>20</td><td>3</td></tr><tr><td>4</td><td>Shruti dey</td><td>B</td><td>41</td><td>3</td></tr><tr><td>5</td><td>Sima mondal</td><td>B</td><td>44</td><td>0</td></tr><tr><td>5</td><td>Tirthankar Saha</td><td>A</td><td>1</td><td>0</td></tr><tr><td>5</td><td>Rima Das </td><td>B</td><td>30</td><td>0</td></tr><tr><td>5</td><td>Tista Dey</td><td>B</td><td>49</td><td>0</td></tr><tr><td>5</td><td>Keya Majumder</td><td>B</td><td>16</td><td>0</td></tr><tr><td>5</td><td>Dipika Naskar</td><td>B</td><td>8</td><td>0</td></tr></table>	<script type="text/javascript">
+		var row=document.getElementsByTagName('tr');
+		var col=document.getElementsByTagName('td');
+		row[0].style.backgroundColor = "#560ffc";
+		for(i=1;i<row.length;i++){
+			if(i%2 == 0)
+				row[i].style.backgroundColor = "#dbc1bf";
+			else
+				row[i].style.backgroundColor = "#f5e9e9";
+		}
+	</script>
+	<script>document.getElementById('std').value=10;document.getElementById('sec').value='1';</script>	<p>(END OF THE LIST)</p>
+	<hr>
+</body>
+</html>
